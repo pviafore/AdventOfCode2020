@@ -29,7 +29,7 @@ def get_number_of_trees_hit(tree_grid: list[str],
 
 def get_all_slopes_result(tree_grid: list[str]):
     slopes = ((1,1), (3,1), (5, 1), (7, 1), (1,2))
-    return reduce(operator.mul, 
+    return reduce(operator.mul,
                   (get_number_of_trees_hit(tree_grid, x,y) for x,y in slopes))
 
 TREE_GRID: list[str] = read("input/input3.txt")

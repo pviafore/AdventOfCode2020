@@ -14,3 +14,10 @@ def test_challenge3():
     from challenge3 import TREE_GRID, get_number_of_trees_hit
 
     assert get_number_of_trees_hit(TREE_GRID, 3) == 265
+
+def test_challenge4():
+    from challenge4 import PASSPORTS, get_number_of_valid_passports, get_number_of_valid_data_passports
+
+    assert get_number_of_valid_passports(PASSPORTS) == 222
+
+    assert get_number_of_valid_data_passports(PASSPORTS) == 140
