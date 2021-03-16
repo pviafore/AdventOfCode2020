@@ -21,3 +21,10 @@ def test_challenge4():
     assert get_number_of_valid_passports(PASSPORTS) == 222
 
     assert get_number_of_valid_data_passports(PASSPORTS) == 140
+
+def test_challenge5():
+    from challenge5 import BOARDING_PASSES, get_highest_seat_id, find_seat_id
+
+    assert get_highest_seat_id(BOARDING_PASSES) == 976
+
+    assert find_seat_id(BOARDING_PASSES) == 685
