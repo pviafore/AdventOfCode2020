@@ -28,3 +28,10 @@ def test_challenge5():
     assert get_highest_seat_id(BOARDING_PASSES) == 976
 
     assert find_seat_id(BOARDING_PASSES) == 685
+
+def test_challenge6():
+    from challenge6 import QUESTIONS, get_sum_of_all_yes_counts, get_sum_of_any_yes_counts
+
+    assert get_sum_of_any_yes_counts(QUESTIONS) == 6506
+
+    assert get_sum_of_all_yes_counts(QUESTIONS) == 3243
