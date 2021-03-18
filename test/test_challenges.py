@@ -35,3 +35,17 @@ def test_challenge6():
     assert get_sum_of_any_yes_counts(QUESTIONS) == 6506
 
     assert get_sum_of_all_yes_counts(QUESTIONS) == 3243
+
+def test_challenge7():
+    from challenge7 import BAG_RULES, get_number_of_bags_able_to_hold_bag, get_number_of_bags_inside
+
+    assert get_number_of_bags_able_to_hold_bag(BAG_RULES, "shiny gold") == 302
+    assert get_number_of_bags_inside(BAG_RULES, "shiny gold") == 4165
+
+def test_challenge8():
+    from challenge8 import INSTRUCTIONS, Computer, get_accumulator_after_fixing_program
+
+    computer = Computer(instructions)
+    assert computer.get_accumulator_after_stop(INSTRUCTIONS) == 1797
+
+    assert get_accumulator_after_fixing_program(INSTRUCTIONS == 1036)
