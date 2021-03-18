@@ -45,7 +45,14 @@ def test_challenge7():
 def test_challenge8():
     from challenge8 import INSTRUCTIONS, Computer, get_accumulator_after_fixing_program
 
-    computer = Computer(instructions)
-    assert computer.get_accumulator_after_stop(INSTRUCTIONS) == 1797
+    computer = Computer(INSTRUCTIONS)
+    assert computer.get_accumulator_after_stop()[1] == 1797
 
-    assert get_accumulator_after_fixing_program(INSTRUCTIONS == 1036)
+    assert get_accumulator_after_fixing_program(INSTRUCTIONS) == 1036
+
+def test_challenge9():
+    from challenge9 import NUMBERS, find_first_wrong_number, find_encryption_weakness
+
+    assert find_first_wrong_number(NUMBERS) == 21806024
+
+    assert find_encryption_weakness(NUMBERS) == 2986195
