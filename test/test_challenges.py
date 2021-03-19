@@ -56,3 +56,13 @@ def test_challenge9():
     assert find_first_wrong_number(NUMBERS) == 21806024
 
     assert find_encryption_weakness(NUMBERS) == 2986195
+
+def test_challenge10():
+    from challenge10 import ADAPTERS, find_all_ways_to_arrange_adapters, get_joltage_product
+
+    assert get_joltage_product(ADAPTERS) == 1820
+
+    assert find_all_ways_to_arrange_adapters(ADAPTERS) == 3454189699072
+
+
+# skipping 11 - it takes too long
