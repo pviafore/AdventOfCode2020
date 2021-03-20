@@ -66,3 +66,10 @@ def test_challenge10():
 
 
 # skipping 11 - it takes too long
+
+
+def test_challenge12():
+    from challenge12 import MOVES, get_manhattan_distance_after_waypoint_moves, get_manhattan_distance_after_travelling
+
+    assert get_manhattan_distance_after_travelling(MOVES) == 2847
+    assert get_manhattan_distance_after_waypoint_moves(MOVES) == 29839
