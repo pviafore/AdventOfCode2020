@@ -73,3 +73,9 @@ def test_challenge12():
 
     assert get_manhattan_distance_after_travelling(MOVES) == 2847
     assert get_manhattan_distance_after_waypoint_moves(MOVES) == 29839
+
+def test_challenge13():
+    from challenge13 import TIMESTAMP, BUS_IDS, find_timestamp_for_consecutive_busses, get_first_bus_after_timestamp
+
+    assert get_first_bus_after_timestamp(TIMESTAMP, BUS_IDS) == 2045
+    assert find_timestamp_for_consecutive_busses(BUS_IDS) == 402251700208309
