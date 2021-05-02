@@ -79,3 +79,16 @@ def test_challenge13():
 
     assert get_first_bus_after_timestamp(TIMESTAMP, BUS_IDS) == 2045
     assert find_timestamp_for_consecutive_busses(BUS_IDS) == 402251700208309
+
+def test_challenge14():
+    from challenge14 import INSTRUCTIONS, get_sum_of_memory, get_sum_of_memory_v2
+
+    assert get_sum_of_memory(INSTRUCTIONS) == 11612740949946
+
+    assert get_sum_of_memory_v2(INSTRUCTIONS) == 3394509207186
+
+def test_challenge15():
+    from challenge15 import PREAMBLE, get_nth_word_spoken
+
+    assert get_nth_word_spoken(PREAMBLE, 10 == 273)
+    assert get_nth_word_spoken(PREAMBLE, 300000 == 47205)
