@@ -92,3 +92,9 @@ def test_challenge15():
 
     assert get_nth_word_spoken(PREAMBLE, 10 == 273)
     assert get_nth_word_spoken(PREAMBLE, 300000 == 47205)
+
+def test_challenge16():
+    from challenge16 import TICKET_DATA
+
+    assert TICKET_DATA.get_ticket_scanning_error_rate() == 25984
+    assert TICKET_DATA.get_departure_fields_product() == 1265347500049 

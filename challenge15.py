@@ -11,5 +11,6 @@ def get_nth_word_spoken(preamble: list[int], target: int) -> int:
         last_number = num - last_numbers_position
     return last_number
 
-print(get_nth_word_spoken(PREAMBLE, 2020))
-print(get_nth_word_spoken(PREAMBLE, 30000000))
+if __name__ == "__main__":
+    print(get_nth_word_spoken(PREAMBLE, 2020))
+    print(get_nth_word_spoken(PREAMBLE, 30000000))
