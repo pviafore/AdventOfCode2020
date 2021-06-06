@@ -7,7 +7,7 @@ def test_challenge1():
 def test_challenge2():
     from challenge2 import PASSWORDS, get_number_of_valid_passwords, get_number_of_old_valid_passwords
     assert get_number_of_old_valid_passwords(PASSWORDS) == 410
-    
+
     assert get_number_of_valid_passwords(PASSWORDS) == 694
 
 def test_challenge3():
@@ -97,4 +97,15 @@ def test_challenge16():
     from challenge16 import TICKET_DATA
 
     assert TICKET_DATA.get_ticket_scanning_error_rate() == 25984
-    assert TICKET_DATA.get_departure_fields_product() == 1265347500049 
+    assert TICKET_DATA.get_departure_fields_product() == 1265347500049
+
+def test_challenge17():
+    from challenge17 import STARTING_DATA, get_active_squares_after_n_cycles
+
+    assert get_active_squares_after_n_cycles(STARTING_DATA, 6) == 359
+
+def test_challenge18():
+    from challenge18 import EQUATIONS, get_sum_of_equations
+
+    assert get_sum_of_equations(EQUATIONS) == 8298263963837
+    assert get_sum_of_equations(EQUATIONS, True) == 145575710203332
