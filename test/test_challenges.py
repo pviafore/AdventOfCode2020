@@ -119,3 +119,9 @@ def test_challenge20():
     from challenge20 import ASSEMBLED_TILES, get_corners_multiplied, get_non_sea_monsters
     assert get_corners_multiplied(ASSEMBLED_TILES) == 111936085519519
     assert get_non_sea_monsters(ASSEMBLED_TILES) == 1792
+
+def test_challenge21():
+    from challenge21 import MEALS, get_number_of_times_nonallergen_ingredients_appear, get_canonically_dangerous_ingredient
+
+    assert get_number_of_times_nonallergen_ingredients_appear(MEALS) == 2203
+    assert get_canonically_dangerous_ingredient(MEALS) == 'fqfm,kxjttzg,ldm,mnzbc,zjmdst,ndvrq,fkjmz,kjkrm'
