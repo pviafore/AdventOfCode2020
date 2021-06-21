@@ -109,3 +109,13 @@ def test_challenge18():
 
     assert get_sum_of_equations(EQUATIONS) == 8298263963837
     assert get_sum_of_equations(EQUATIONS, True) == 145575710203332
+
+def test_challenge19():
+    from challenge19 import MESSAGE_DATA_WITH_SUBSTITUTIONS, MESSAGE_DATA
+    assert MESSAGE_DATA.get_number_of_matching_rules("0") == 241
+    assert MESSAGE_DATA_WITH_SUBSTITUTIONS.get_number_of_matching_rules("0") == 424
+
+def test_challenge20():
+    from challenge20 import ASSEMBLED_TILES, get_corners_multiplied, get_non_sea_monsters
+    assert get_corners_multiplied(ASSEMBLED_TILES) == 111936085519519
+    assert get_non_sea_monsters(ASSEMBLED_TILES) == 1792
