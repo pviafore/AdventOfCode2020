@@ -125,3 +125,13 @@ def test_challenge21():
 
     assert get_number_of_times_nonallergen_ingredients_appear(MEALS) == 2203
     assert get_canonically_dangerous_ingredient(MEALS) == 'fqfm,kxjttzg,ldm,mnzbc,zjmdst,ndvrq,fkjmz,kjkrm'
+
+def test_challenge22():
+    from challenge22 import DECKS, get_winning_score_recursive, get_winning_score
+
+    assert get_winning_score(DECKS) == 33098
+    assert get_winning_score_recursive(DECKS) == 35055
+
+def test_challenge23():
+    from challenge23 import ARRANGEMENT, get_labels_after_1
+    assert get_labels_after_1(ARRANGEMENT, 100) == '39564287'
