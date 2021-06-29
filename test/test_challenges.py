@@ -135,3 +135,12 @@ def test_challenge22():
 def test_challenge23():
     from challenge23 import ARRANGEMENT, get_labels_after_1
     assert get_labels_after_1(ARRANGEMENT, 100) == '39564287'
+
+def test_challenge24():
+    from challenge24 import TILES, get_final_number_of_flipped_tiles, get_flipped_tiles
+    assert get_flipped_tiles(TILES) == 312
+    assert get_final_number_of_flipped_tiles(TILES) == 3733
+
+def test_challenge25():
+    from challenge25 import get_encryption_key, CARD_PUBLIC_KEY, DOOR_PUBLIC_KEY
+    assert get_encryption_key(CARD_PUBLIC_KEY, DOOR_PUBLIC_KEY) == 11576351
