@@ -14,7 +14,6 @@ def get_loop_size(target, subject_number) -> int:
 
 def get_encryption_key(card_public_key, door_public_key) -> int:
     card_loop_size = get_loop_size(card_public_key, 7)
-    door_loop_size = get_loop_size(door_public_key, 7)
     subject_number = door_public_key
     candidate = 1
     for _ in range(card_loop_size):
